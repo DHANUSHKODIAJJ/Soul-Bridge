@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoulBridge - Start a Mediation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">SoulBridge</div>
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <ul id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#" id="about-link">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Future Application</a></li>
+        </ul>
+    </nav>
+    <sec id="quote-section">
+        <p id="daily-quote">Loading love quote...</p>
+    </sec>
+
+    <main>
+        <div class="container main-layout">
+            <div class="column-left">
+                <h1>SoulBridge 💝</h1>
+                <p class="subtitle">tell the part of exact problem</p>
+
+                <div id="create-form-container">
+                    <div class="form-group">
+                        <label for="name">soul one</label>
+                        <input type="text" id="name" placeholder="kodi">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">What's the issue?</label>
+                        <textarea id="message" placeholder="Describe the situation from your perspective..."></textarea>
+                    </div>
+
+                    <button id="create-btn" class="btn">
+                        <svg height="14" width="54" fill="#FFFFFF" viewBox="0 0 24 24" data-name="Layer 1" id="Layer_1"
+                            class="sparkle">
+                            <path
+                                d="M10,21.236,6.755,14.745.264,11.5,6.755,8.255,10,1.764l3.245,6.491L19.736,11.5l-6.491,3.245ZM18,21l1.5,3L21,21l3-1.5L21,18l-1.5-3L18,18l-3,1.5ZM19.333,4.667,20.5,7l1.167-2.333L24,3.5,21.667,2.333,20.5,0,19.333,2.333,17,3.5Z">
+                            </path>
+                        </svg>
+                        <span class="text">Connect Bridge</span>
+                    </button>
+                </div>
+
+                <div id="share-container">
+                    <h3>Session Created!</h3>
+                    <p>Send this link to User B:</p>
+                    <div class="share-link-box">
+                        <a href="#" id="invite-link" target="_blank">Generating...</a>
+                    </div>
+                    <p class="waiting-text">Waiting for them to join...</p>
+                </div>
+            </div>
+
+            <div class="column-right">
+                <img src="couple1.png" alt="Couple Illustration" class="feature-image">
+            </div>
+        </div>
+    </main>
+
+    <!-- Relationship Timeline Section -->
+    <section id="journey" class="timeline-section">
+        <h1 class="section-title">Relationship Journey</h1>
+        <div class="timeline-container">
+            <!-- Phase 1 -->
+            <div class="timeline-item left">
+                <div class="timeline-img-box">
+                    <img src="./assert/1.png" alt="Attraction Phase">
+                </div>
+                <div class="timeline-content glass-card">
+                    <h3> Attraction / Crush Phase 😍</h3>
+                    <ul>
+                        <li>Butterflies in stomach</li>
+                        <li>Constant texting & calling</li>
+                        <li>Everything feels perfect</li>
+                        <li>You ignore flaws</li>
+                        <li>"I can't stop thinking about them!"</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Phase 2 -->
+            <div class="timeline-item right">
+                <div class="timeline-img-box">
+                    <img src="./assert/2.png" alt="Honeymoon Phase">
+                </div>
+                <div class="timeline-content glass-card">
+                    <h3> Honeymoon Phase 💕</h3>
+                    <ul>
+                        <li>Deep love & romance</li>
+                        <li>Lots of dates & affection</li>
+                        <li>You both try to impress</li>
+                        <li>High emotional connection</li>
+                        <li>Best memories start here ✨</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Phase 3 -->
+            <div class="timeline-item left">
+                <div class="timeline-img-box">
+                    <img src="./assert/3.png" alt="Reality / Conflict Phase">
+                </div>
+                <div class="timeline-content glass-card">
+                    <h3> Reality / Conflict Phase ⚡</h3>
+                    <ul>
+                        <li>Real personalities come out</li>
+                        <li>Small fights begin</li>
+                        <li>Ego issues, misunderstandings</li>
+                        <li>Expectations clash</li>
+                        <li>This phase tests real love 💔</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Phase 4 -->
+            <div class="timeline-item right">
+                <div class="timeline-img-box">
+                    <img src="./assert/4.png" alt="Adjustment Phase">
+                </div>
+                <div class="timeline-content glass-card">
+                    <h3> Adjustment Phase 🤝</h3>
+                    <ul>
+                        <li>Learning to compromise</li>
+                        <li>Understanding each other</li>
+                        <li>Communication improves</li>
+                        <li>Emotional maturity grows</li>
+                        <li>"Okay, let's solve it together."</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Phase 5 -->
+            <div class="timeline-item left">
+                <div class="timeline-img-box">
+                    <img src="./assert/5.png" alt="Stability Phase"> <!-- Reusing phase 2 as placeholder -->
+                </div>
+                <div class="timeline-content glass-card">
+                    <h3> Stability Phase 🧘</h3>
+                    <ul>
+                        <li>Trust is strong</li>
+                        <li>Comfortable silence</li>
+                        <li>Support in tough times</li>
+                        <li>Less drama, more peace</li>
+                        <li>True partnership ❤️</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Phase 6 -->
+            <div class="timeline-item right">
+                <div class="timeline-img-box">
+                    <img src="./assert/6.png" alt="Commitment / Future Phase"> <!-- Reusing phase 1 as placeholder -->
+                </div>
+                <div class="timeline-content glass-card">
+                    <h3> Commitment / Future Phase 💍</h3>
+                    <ul>
+                        <li>Talking about marriage</li>
+                        <li>Career & life planning</li>
+                        <li>Family involvement</li>
+                        <li>Long-term vision</li>
+                        <li>Growing old together vibes 👴👵</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Creator: Dhanushkodi Ajj (prototype website still working on add new features)</p>
+        <p>Email: <a href="mailto:ajjdhanushkodi06@gmail.com">ajjdhanushkodi06@gmail.com</a></p>
+    </footer>
+
+    <!-- Loader Overlay -->
+    <div id="loader-overlay">
+        <div class="loader">
+            <svg width="100" height="100" viewBox="0 0 100 100">
+                <defs>
+                    <mask id="clipping">
+                        <polygon points="0,0 100,0 100,100 0,100" fill="black"></polygon>
+                        <polygon points="25,25 75,25 50,75" fill="white"></polygon>
+                        <polygon points="50,25 75,75 25,75" fill="white"></polygon>
+                        <polygon points="35,35 65,35 50,65" fill="white"></polygon>
+                        <polygon points="35,35 65,35 50,65" fill="white"></polygon>
+                        <polygon points="35,35 65,35 50,65" fill="white"></polygon>
+                        <polygon points="35,35 65,35 50,65" fill="white"></polygon>
+                    </mask>
+                </defs>
+            </svg>
+            <div class="box"></div>
+        </div>
+        <p style="margin-top: 20px; font-weight: bold; color: #be4a1d;">Connecting SoulBridge...</p>
+    </div>
+
+    <!-- About Modal -->
+    <div id="about-modal" class="modal">
+        <div class="modal-content about-box">
+            <span class="close-btn">&times;</span>
+            <div class="about-header">
+                <h2>About the Creator</h2>
+                <div class="profile-icon">👨‍💻</div>
+            </div>
+
+            <div class="about-body">
+                <h3>Dhanush Kodi AJJ</h3>
+                <p class="role">Passionate Developer & Self-Learner</p>
+                <p class="bio">
+                    M.Sc. in Computer Science. Specialized in creating exceptional, user-centric digital experiences
+                    with a focus on innovation and clean code.
+                </p>
+
+                <div class="skills-section">
+                    <h4>Core Skills</h4>
+                    <div class="skill-pills">
+                        <span class="pill">JavaScript</span>
+                        <span class="pill">Python</span>
+                        <span class="pill">React</span>
+                        <span class="pill">Node.js</span>
+                        <span class="pill">MongoDB</span>
+                        <span class="pill">SQL</span>
+                    </div>
+                </div>
+
+                <div class="projects-section">
+                    <h4>Key Projects</h4>
+                    <ul class="project-list">
+                        <li>🎥 Movie Review Website</li>
+                        <li>📝 Notepad Web App</li>
+                    </ul>
+                </div>
+
+                <div class="social-links">
+                    <a href="mailto:ajjdhanushkodi06@gmail.com" class="social-btn">Email Me</a>
+                    <a href="https://dhanushkodiajj.vercel.app/" target="_blank"
+                        class="social-btn primary">Portfolio</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('create-btn').addEventListener('click', createSession);
+    </script>
+</body>
+
+</html>
