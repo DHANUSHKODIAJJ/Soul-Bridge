@@ -3,6 +3,9 @@
 SoulBridge is an emotional connection platform that helps people
 build meaningful relationships and self-growth.
 
+![SoulBridge Logo](images/logo.png)
+
+
 ## 🚀 Features
 - Emotional AI chat
 - Relationship phase tracker
